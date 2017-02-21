@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+        #speechActivity {
+            position: absolute;
+            width: 30px;
+        }
+
+        #networkActivity {
+            position: absolute;
+            width: 30px;
+            top: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <img id="speechActivity" class="hidden" src="waiting.gif" />
+    <img id="networkActivity" class="hidden" src="radio.gif" />
+    <table width="100%">
+        <tr><td /><td><h1>BingSpeech.js using silences detection</h1><h2>Microsoft Cognitive Services</h2></td></tr>
+        <tr>
+            <td align="right"><A href="https://www.microsoft.com/cognitive-services/en-us/sign-up" target="_blank">Subscription</A>:</td>
+            <td><input id="key" type="text" size="40" value="YOUR_BING_SPEECH_API_KEY"></td>
+        </tr>
+        <tr>
+            <td />
+            <td align="left">
+                <select id="languageoptions">
+                    <option value="zh-CN">Chinese - CN</option>
+                    <option value="en-GB">English - GB</option>
+                    <option value="en-US" selected="selected">English - US</option>
+                    <option value="fr-FR">French - FR</option>
+                    <option value="de-DE">German - DE</option>
+                    <option value="it-IT">Italian - IT</option>
+                    <option value="es-ES">Spanish - ES</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td />
+            <td><button id="startBtn" onclick="start()">Start</button><button id="stopBtn" disabled="disabled" onclick="stop()">Stop</button></td>
+        </tr>
+        <tr>
+            <td />
+            <td>
+                <textarea id="output" style='width:400px;height:200px'></textarea>
+            </td>
+        </tr>
+    </table>
+    <ul id="wavFiles">
+    </ul>
+    <script src="../BingSpeech.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+</body>
+</html>
