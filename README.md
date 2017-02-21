@@ -3,10 +3,10 @@ A small JavaScript library to call Bing Speech-To-Text API with continuous voice
 
 This library fixes a couple of issues currently exposed in the official SDK: https://github.com/Microsoft/Cognitive-Speech-STT-JavaScript such as:
 
-- reusing the web audio context that will be instanced one to avoid breaking in Chrome after 6 calls
-- continuous recognition by detecting the voice/silence and automatically sending the audio sample to the API for analyze
-- reusing the authentication token as it's valid for 10 min rather than creating it again on each request for better performance
-- better browsers compatibility (specifically with Firefox and Chrome)
+- **reusing the web audio context** that will be instanced one to avoid breaking in Chrome after 6 calls
+- **continuous recognition by detecting the voice/silence** and automatically sending the audio sample to the API for analyze
+- **reusing the authentication token** as it's valid for 10 min rather than creating it again on each request for better performance
+- **better browsers compatibility** (specifically with Firefox and Chrome, or mobile Safari for Web Audio)
 
 However, it doesn't support NACL or ActiveX fallbacks for older browsers such as IE11 or older versions of Chrome. 
 
