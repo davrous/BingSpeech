@@ -32,6 +32,8 @@ function stop() {
 }
 
 function createAndSetupClient() {
+    document.getElementById("startBtn").disabled = false;
+
     if (client) {
         stop();
     }
@@ -62,5 +64,3 @@ function createAndSetupClient() {
         networkActivity.classList.add("hidden");
     }
 }
-
-createAndSetupClient();
