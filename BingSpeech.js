@@ -45,8 +45,8 @@ var BingSpeech;
         SupportedLocales[SupportedLocales["frFR_Female"] = 14] = "frFR_Female";
         SupportedLocales[SupportedLocales["frFR_Male"] = 15] = "frFR_Male";
         SupportedLocales[SupportedLocales["itIT_Male"] = 16] = "itIT_Male";
-        SupportedLocales[SupportedLocales["jpJP_Female"] = 17] = "jpJP_Female";
-        SupportedLocales[SupportedLocales["jpJP_Male"] = 18] = "jpJP_Male";
+        SupportedLocales[SupportedLocales["jaJP_Female"] = 17] = "jaJP_Female";
+        SupportedLocales[SupportedLocales["jaJP_Male"] = 18] = "jaJP_Male";
         SupportedLocales[SupportedLocales["ptBR_Male"] = 19] = "ptBR_Male";
         SupportedLocales[SupportedLocales["ruRU_Female"] = 20] = "ruRU_Female";
         SupportedLocales[SupportedLocales["ruRU_Male"] = 21] = "ruRU_Male";
@@ -586,13 +586,13 @@ var BingSpeech;
                     gender = "'Male'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (it-IT, Cosimo, Apollo)";
                     break;
-                case SupportedLocales.jpJP_Female:
-                    locale = "'jp-jp'";
+                case SupportedLocales.jaJP_Female:
+                    locale = "'ja-jp'";
                     gender = "'Female'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (ja-JP, Ayumi, Apollo)";
                     break;
-                case SupportedLocales.jpJP_Male:
-                    locale = "'jp-jp'";
+                case SupportedLocales.jaJP_Male:
+                    locale = "'ja-jp'";
                     gender = "'Male'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (ja-JP, Ichiro, Apollo)";
                     break;

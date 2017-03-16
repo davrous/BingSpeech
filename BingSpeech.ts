@@ -77,7 +77,7 @@ module BingSpeech {
 
     export enum SupportedLocales {
         arEG_Female, deDE_Female, deDE_Male, enAU_Female, enCA_Female, enGB_Female, enGB_Male, enIN_Male, enUS_Female, enUS_Male, esES_Female, esES_Male, esMX_Male, frCA_Female,
-        frFR_Female, frFR_Male, itIT_Male, jpJP_Female, jpJP_Male, ptBR_Male, ruRU_Female, ruRU_Male, zhCN_Female, zhCN_Female2, zhCN_Male, zhHK_Female, zhHK_Male, zhTW_Female, zhTW_Male
+        frFR_Female, frFR_Male, itIT_Male, jaJP_Female, jaJP_Male, ptBR_Male, ruRU_Female, ruRU_Male, zhCN_Female, zhCN_Female2, zhCN_Male, zhHK_Female, zhHK_Male, zhTW_Female, zhTW_Male
     }
 
     class Tools {
@@ -664,13 +664,13 @@ module BingSpeech {
                     gender = "'Male'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (it-IT, Cosimo, Apollo)";
                     break;
-                case SupportedLocales.jpJP_Female:
-                    locale = "'jp-jp'";
+                case SupportedLocales.jaJP_Female:
+                    locale = "'ja-jp'";
                     gender = "'Female'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (ja-JP, Ayumi, Apollo)";
                     break;
-                case SupportedLocales.jpJP_Male:
-                    locale = "'jp-jp'";
+                case SupportedLocales.jaJP_Male:
+                    locale = "'ja-jp'";
                     gender = "'Male'";
                     supportedLocaleValue = "Microsoft Server Speech Text to Speech Voice (ja-JP, Ichiro, Apollo)";
                     break;
